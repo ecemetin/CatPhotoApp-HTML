@@ -1,0 +1,55 @@
+<html> <!--It's an HTML file-->
+  <body><!--main area-->
+    <h1>CatPhotoApp</h1><!--biggest heading-->
+    <main><!--main section of the page-->
+      <section><!--first section of the page-->
+        <h2>Cat Photos</h2><!--second biggest heading-->
+        <!-- this is not a real comment, just learning how to comment:)-->
+        <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      <!--p means its a paragraph. a means "anchor" to another page which is "hypertext reference (href)"-->
+       <!--img is a self closing tag, so no nee to put </>--> 
+       <!--alt: alternative reference. If the image cannot be displayed, we will sea its alt-->
+      <section><!--second section of the page-->
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3> <!--3rd degree heading and getting smaller-->
+        <ul> <!--unordered list-->
+          <li>cat nip</li> <!--list items. Outcome will be itms with dot at the beginning-->
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure> <!--lets us associate an image with a caption-->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        <!-- em=emphasize by making text italic-->
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+          <!--"strong element" makes the text BOLD-->
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <!-- form adds a webform to collect data from users-->
+            <!--input is asef closing tag like img-->
+          <label><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+          <!--required = prevents a user submitting the form without entering necessary information-->
+          <!-- id attribute: each id attribut's value must be unique, their orer doesn't matter.-->
+          <!--name atribute: to auto deselect the other option when you choose another option-->
+          <!-- both "BUTTON and "INPUT" are "inline elements, they appear next to each other in same line"-->
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
